@@ -25,3 +25,12 @@ Pour garantir la qualité de l'entraide au sein du Fablab, les utilisateurs peuv
 =======
 - **Interface :** Streamlit ou Gradio (pour un prototypage rapide en Python).
 >>>>>>> 3e08b260da7e00ccf52106f4db969e738811d777
+
+fabIAna/
+├── .venv/              
+├── src/
+│   ├── main.py         
+│   └── database.py     
+├── .gitignore          
+├── README.md           
+└── test_connexion.py
