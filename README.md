@@ -1,10 +1,23 @@
 # FabIAna
-Une base de connaissances interactive avec une IA qui aide l'utilisateur pour saisir et rechercher des personnes
+Le système repose sur un agent IA local capable de gérer trois modes :
 
-L'objectif de ce logiciel est de l'installer localement sur une machine équipé d'un accelerateur/proceseur IA pour faire tourner une LLM.
+### 1. Saisie Intuitive & Interactive
+L'IA agit comme un agent d'accueil. Elle ne se contente pas de stocker, elle analyse la complétude du profil. Si une information essentielle (ex: moyen de contact) est oubliée dans la conversation, l'IA relancera l'utilisateur pour enrichir la base.
 
-La base de conaissances est un logiciel/programme qui permet de sauvegarder des informations, dans ce cas il s'agit de personnes. Dans le contexte de l'association CampusFab (fablab UT) nous recevons très souvent des personnes qui on des niveaux de competences dans cetraines matieres, qui on participe a plein de projets et qui souhaitent aider la communote fablab.
+### 2. Orientation de Projet (Matchmaking)
+L'utilisateur décrit son idée ou son problème technique. Le système effectue une recherche vectorielle pour identifier les membres ayant les compétences adéquates et génère une recommandation personnalisée en expliquant *pourquoi* ce contact est pertinent.
 
-Le probleme est que, les informations sur ces personnes ne sont pas stockees efficacement, ni transmises de manière uniforme a tous les membres de l'equipe campusfab. D'ou l'interet de faire une base de connaissances.
+### 3. Boucle de Rétroaction (Système de Réputation)
+Pour garantir la qualité de l'entraide au sein du Fablab, les utilisateurs peuvent laisser des avis sur les échanges :
+- **Réactivité :** Le contact répond-il rapidement ?
+- **Efficacité :** L'aide a-t-elle permis d'avancer sur le projet ?
+- **Savoir-être :** L'échange a-t-il été agréable ?
+*Ces données permettent à l'IA de prioriser les membres les plus actifs et pédagogues dans ses recommandations futures.*
 
-L'integration d'une LLM dans la base de connaissances est un plus, elle vient faciliter les taches d'enregistrement, avec un simple chat, on pourra disscuter simplement "J'ai connus Alexandru Carp! il est étudiant en genie electrique et informatique industrielle, il aime bien travailler sur des projets d'informatique embarquee" et l'ia
+## 🛠️ Stack Technique visée
+- **LLM :** Llama 3 (8B) via Ollama.
+- **Orchestration :** LangChain ou LangGraph (pour gérer les questions de suivi de l'IA).
+- **Base de données :** 
+    - **ChromaDB :** Pour la recherche par compétences (Vector Store).
+    - **SQLite :** Pour les profils détaillés et les notes de feedback.
+- **Interface :** Streamlit ou Gradio (pour un prototypage rapide en Python).
