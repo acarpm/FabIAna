@@ -23,6 +23,7 @@ def extraire_informations(historique_conversation):
         - autres_infos: (string ou null, pour toute information que tu juges pertinente mais qui ne rentre pas dans les autres catégories)
         - infos_manquantes: (booléen, true s'il manque des informations que tu estimes importantes pour la base de connaissances. Tu peux demander des infomations autres que celles listées ci-dessus si tu penses que c'est nécessaire pour mieux comprendre la personne ou pour enrichir la base de connaissances, mais ce n'est pas obligatoire)
         - question_a_poser: (une question polie pour demander la/les info manquante, adaptée à la personne et au contexte, ou null si aucune question n'est nécessaire)
+        - Si le message de l'utilisateur semble incohérent ou hors sujet, hesite pas à demander des clarifications avec une question adaptée.
     """
 
     # On prépare les messages (Prompt Système + Historique)

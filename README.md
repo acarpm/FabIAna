@@ -20,11 +20,7 @@ Pour garantir la qualité de l'entraide au sein du Fablab, les utilisateurs peuv
 - **Base de données :** 
     - **ChromaDB :** Pour la recherche par compétences (Vector Store).
     - **SQLite :** Pour les profils détaillés et les notes de feedback.
-<<<<<<< HEAD
-- **Interface :** Streamlit ou Gradio (pour un prototypage rapide en Python).
-=======
-- **Interface :** Streamlit ou Gradio (pour un prototypage rapide en Python).
->>>>>>> 3e08b260da7e00ccf52106f4db969e738811d777
+
 
 fabIAna/
 ├── .venv/              
@@ -35,3 +31,13 @@ fabIAna/
 ├── README.md           
 └── test_connexion.py
 
+Comment utiliser ce repo:
+
+Installer Ollama
+Istaller Llama3:8b: ollama run llama3:8b
+
+Se déplacer vers le repertoire du projet et creer un venv python: python -m venv .venv
+Activer le venv: source .venv/bin/activate   
+Installer les dependences sur le venv: pip3 install ollama langchain-community langchain-core
+
+Maintenant on peut tester notre fichier ai_engine.py:  python3 ai_engine.py
