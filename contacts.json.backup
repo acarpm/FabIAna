@@ -1,0 +1,54 @@
+[
+  {
+    "nom": "Jean-Paul Naja",
+    "métiers": [
+      "maintenance informatique général"
+    ],
+    "autres_infos": "PDG d'Interface Numérique"
+  },
+  {
+    "nom": "Ylan Pernot",
+    "métiers": [
+      "Président de la SYNJ SAS",
+      "Vice-Président de CampusFab"
+    ],
+    "passions": [
+      "Programmation",
+      "Modélisation 3D"
+    ],
+    "competences": [
+      "C",
+      "C++"
+    ],
+    "autres_infos": "Ne pas aimer le web"
+  },
+  {
+    "nom": "Alexandru",
+    "métiers": [
+      "Électronicien"
+    ],
+    "passions": [
+      "Électronique"
+    ],
+    "competences": [
+      "Connaissance de l'électronique",
+      "Expérience en mécatronique"
+    ],
+    "etudes": "Mécatronique",
+    "autres_infos": ""
+  },
+  {
+    "nom": "François Thibault",
+    "métiers": [
+      "Professeur"
+    ],
+    "passions": [
+      "Linux"
+    ],
+    "competences": [
+      "Électronique"
+    ],
+    "etudes": "Professeur en électronique",
+    "autres_infos": "Président de NeoCampus"
+  }
+]
